@@ -44,7 +44,7 @@ extern "C" {
 	 * Signature: (IILjava/lang/String;DIIIII)I
 	 */
 	JNIEXPORT jint JNICALL Java_com_onegolabs_wamanager_scales_aclas_AclasLoader_sendArticleToScales
-	(JNIEnv *, jobject, jint, jint, jstring, jdouble, jint, jint, jint, jint, jint);
+	(JNIEnv *, jobject, jint, jint, jstring, jdouble, jint, jint, jint, jint, jint, jint);
 
 	/*
 	 * Class:     com_onegolabs_wamanager_scales_aclas_AclasLoader
