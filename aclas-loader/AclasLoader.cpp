@@ -32,10 +32,10 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 #pragma managed(pop)
 #endif
 
-void _setObjectAddress(JNIEnv *env, jobject self, void* addr)
+void _setObjectAddress(JNIEnv *env, jobject self, void* address)
 {
-	jfieldID idField = env->GetFieldID(env->GetObjectClass(self), "addr", "J");
-	env->SetLongField(self, idField, (jlong)addr);
+	jfieldID idField = env->GetFieldID(env->GetObjectClass(self), "address", "J");
+	env->SetLongField(self, idField, (jlong)address);
 }
 
 IAClasOLEDriver* _getObjectAddress(JNIEnv* env, jobject self)
